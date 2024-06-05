@@ -1,0 +1,547 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Fjalla+One&family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Fjalla+One&family=Kaushan+Script&family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Fjalla One", sans-serif;
+}
+
+body{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #141414;
+}
+
+.nav_wrap{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.nav_bar{
+  width: 500px;
+  display: flex;
+  height: 100px;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 100px;
+}
+
+.nav_bar li{
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.nav_bar li a{
+  color: rgb(189, 189, 189);
+  font-weight: 400;
+  font-family: "Mulish", sans-serif;
+
+}
+
+nav{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav img{
+  padding-left: 20px;
+}
+
+.all_container{
+    width: 100%;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    background-color: #141414;
+/*     background-image: url(image/wavybackgroun.jpg); */
+    background-repeat: no-repeat; /* 배경 이미지가 반복되지 않도록 설정 */
+    background-size: cover;
+}
+
+.wrap{
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    padding-top: 100px;
+}
+
+
+
+.wrap img{
+    height: 00px;
+    z-index: 1;
+    padding-top: 135px;
+    margin-left: -500px;
+    position: absolute;
+    border-radius: 10%;
+}
+
+.backimg{
+  width: 80%;
+  height: 430px;
+  z-index: 1;
+  padding-top: 325px;
+  position: absolute;
+  border-radius: 40px;
+  object-fit: cover;
+}
+
+.glass{
+    width: 1450px;
+    height: 700px;
+    border-radius: .75rem;
+    background: linear-gradient(135deg, rgba(255,255,255,0.2),
+    rgba(255,255,255,0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+/*     border: 1px solid  rgba(0, 0, 0, 0.2); */
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0,2);
+    position: absolute;
+    top: -52%;
+}
+
+.text1{
+    width: 100%;
+    font-size: 6vw;
+    color: white;
+    font-weight: 400;
+    z-index: 2;
+    text-align: left;
+    padding-left: 200px;
+}
+
+.con2{
+  font-size: 2vw;
+  font-weight: 200;
+  font-family: "Mulish", sans-serif;
+  padding-bottom: 5px;
+  padding-left: 5px;
+}
+
+
+.con{
+    font-size: 5vw; 
+    font-weight: 400;
+    
+}
+
+
+.text_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 200px;
+  padding-bottom: 320px;
+}
+
+.text {
+  font-size: 10vw;
+  letter-spacing: -.01em;
+  line-height: 100%;
+  margin: 0;
+  
+  width: 100%;
+  color: rgb(182, 182, 182, 0.2);
+  background: linear-gradient(to right, #b6b6b6, #b6b6b6) no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-size: 0%;
+  transition: background-size cubic-bezier(.1,.5,.5,1) 0.5s;
+  
+
+  border-bottom: 1px solid #2F2B28;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+}
+
+span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #4246ce;
+  color: #0D0D0D;
+  
+  clip-path: polygon(0 50%, 100% 50%, 100% 50%, 0 50%);
+  transform-origin: center;
+  transition: all cubic-bezier(.1,.5,.5,1) 0.4s;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.text:hover > span {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+.wrapper {
+    width: 100%;
+    height: 1080px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+.container {
+    height: 400px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+}
+
+.text2{
+    font-size: 5vw;
+    color: white;
+    font-weight: 400;
+    padding-right: 55px;
+    text-align: left;
+    
+}
+
+.card {
+    width: 80px;
+    border-radius: .75rem;
+    background-size: cover;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 2rem;
+    margin: 0 10px;
+    display: flex;
+    align-items: flex-end;
+    transition: .6s cubic-bezier(.28,-0.03,0,.99);
+    box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
+}
+
+.card > .row {
+    color: rgb(255, 134, 134);
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.card > .row > .icon {
+    background: #223;
+    color: white;
+    border-radius: 50%;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+.card > .row > .description {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    height: 80px;
+    width: 520px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition-delay: .3s;
+    transition: all .3s ease;
+}
+
+.description p {
+    color: #585858;
+    padding-top: 5px;
+}
+
+.description h4 {
+    text-transform: uppercase;
+}
+
+input {
+    display: none;
+}
+
+input:checked + label {
+    width: 600px;
+}
+
+input:checked + label .description {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+.card[for="c1"] {
+    background-image: url(image/21\ Beautiful\ Minimalist\ Desktop\ Wallpapers\ \(4K\).jpg);
+}
+.card[for="c2"] {
+    background-image: url(image/다운로드\ \(2\).jpg);
+}
+.card[for="c3"] {
+    background-image: url(image/50\ pochettes\ de\ disques\ réalisées\ par\ des\ artistes.jpg);
+}
+.card[for="c4"] {
+    background-image: url(image/fe374431-bcb8-42f1-b71d-45fa40f7151c.jpg);
+}
+
+
+
+.last{
+    width: 100%;
+    height: 1080px;
+    padding-top: 170px;
+}
+
+
+.last_wrap{
+    width: 100%;
+    text-align: center;
+    
+}
+
+.contact{
+    color: white;
+    font-size: 3vw;
+}
+
+
+:root{
+    --background-dark: #2d3548;
+    --text-light: rgba(255,255,255,0.6);
+    --text-lighter: rgba(255,255,255,0.9);
+    --spacing-s: 8px;
+    --spacing-m: 16px;
+    --spacing-l: 24px;
+    --spacing-xl: 32px;
+    --spacing-xxl: 64px;
+    --width-container: 1200px;
+  }
+  
+
+  
+  .hero-section{
+    align-items: flex-start;
+    background-image: linear-gradient(15deg, #141414 0%, #141414 150%);
+    display: flex;
+    min-height: 100%;
+    justify-content: center;
+    padding: var(--spacing-xxl) var(--spacing-l);
+    background-color: #141414;
+    padding-top: 140px;
+  }
+  
+  .card1-grid{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: var(--spacing-l);
+    grid-row-gap: var(--spacing-l);
+    max-width: var(--width-container);
+    width: 100%;
+  }
+  
+  @media(min-width: 540px){
+    .card1-grid{
+      grid-template-columns: repeat(2, 1fr); 
+    }
+  }
+  
+  @media(min-width: 960px){
+    .card1-grid{
+      grid-template-columns: repeat(4, 1fr); 
+    }
+  }
+  
+  .card1{
+    list-style: none;
+    position: relative;
+  }
+  
+  .card1:before{
+    content: '';
+    display: block;
+    padding-bottom: 150%;
+    width: 100%;
+  }
+  
+  .card1__background{
+    background-size: cover;
+    background-position: center;
+    border-radius: var(--spacing-l);
+    bottom: 0;
+    filter: brightness(0.75) saturate(1.2) contrast(0.85);
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform-origin: center;
+    trsnsform: scale(1) translateZ(0);
+    transition: 
+      filter 200ms linear,
+      transform 200ms linear;
+  }
+  
+  .card1:hover .card1__background{
+    transform: scale(1.05) translateZ(0);
+  }
+  
+  .card1-grid:hover > .card1:not(:hover) .card1__background{
+    filter: brightness(0.5) saturate(0) contrast(1.2) blur(20px);
+  }
+  
+  .card1__content{
+    left: 0;
+    padding: var(--spacing-l);
+    position: absolute;
+    top: 0;
+  }
+  
+  .card1__category{
+    color: var(--text-light);
+    font-size: 0.9rem;
+    margin-bottom: var(--spacing-s);
+    text-transform: uppercase;
+    text-align: left;
+  }
+  
+  .card1__heading{
+    color: var(--text-lighter);
+    font-size: 1.9rem;
+    text-shadow: 2px 2px 20px rgba(0,0,0,0.2);
+    line-height: 1.4;
+    word-spacing: 100vw;
+    text-align: left;
+  }
+
+
+.workttx{
+  width: 100%;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 100px;
+  padding-top: 100px;
+  margin-bottom: -70px;
+}
+
+.grid_container{
+  width: 100%;
+  height: 2000px;
+  display: flex;
+  justify-content: center; /* 수평 가운데 정렬 */
+  align-items: center;
+}
+
+.grid_wrap {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3개의 열로 분할, 동일 비율 */
+  gap: 20px; /* 카드 사이의 간격 */
+  width: 80%; /* 그리드 컨테이너의 너비 설정 */
+  max-width: 1200px; /* 최대 너비 설정 */
+}
+
+
+
+.card3 {
+  width: 300px;
+  height: 450px;
+  padding: 20px; /* 카드 내부 여백 */
+/*   box-shadow: 0 4px 8px rgba(255, 255, 255, 0.603); */ /* 그림자 효과 */
+  border-radius: 5%;
+  transition: transform 0.5s ease-in-out !important; 
+}
+
+.card3 img {
+  width: 100%;
+  height: auto; /* 이미지 높이를 자동으로 조절 */
+}
+
+.card3:hover{
+  transform: scale(1.1) !important; 
+  cursor: pointer;
+}
+
+
+.card3 p {
+  margin-top: 10px; /* 이미지와 텍스트 사이의 간격 */
+  color: white;
+}
+
+.card3_large {
+  flex: 1 1 800px; /* 기본 크기를 500px로 설정, 유연하게 조정 가능 */
+  max-width: 500px;
+  height: 600px;
+}
+
+.card3_small {
+  flex: 1 1 200px; /* 기본 크기를 200px로 설정, 유연하게 조정 가능 */
+  max-width: 200px;
+  height: 300px;
+}
+
+/* 카드 위치 조정을 위한 클래스 */
+
+.card_position1{
+
+}
+.card_position2 {
+  margin-top: 100px;
+}
+
+.card_position3 {
+  margin-top: 10px;
+}
+
+.card_position4 {
+  padding-top: -140px;
+}
+
+.card_position5 {
+  margin-top: 50px;
+}
+
+
+.footer_container{
+  width: 100%;
+  display: flex;
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #141414;
+  color: #fff;
+  padding: 20px;
+}
+.contact-info {
+  text-align: left;
+}
+.contact-info p {
+  margin: 5px 0; /* 연락처와 이메일 사이의 간격 조정 */
+  font-weight: 400;
+}
+.copyright {
+  text-align: right;
+}
+.footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.footer a:hover {
+  text-decoration: underline;
+}
